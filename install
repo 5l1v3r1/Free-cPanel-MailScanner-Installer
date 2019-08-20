@@ -1,0 +1,11 @@
+Login to your root account on your server via SSH
+Download the installer, expand it and go into it:
+wget https://download.configserver.com/msinstall.tar.gz
+tar -xzf msinstall.tar.gz
+cd msinstall/
+Follow the instructions in the INSTALL.txt file
+Please note that the script uses a stable version of MailScanner which might not be the very latest from the developer
+Once installed/upgraded/uninstalled make sure that both MailScanner is running correctly and that exim is sending and receiving emails:
+tail -f /var/log/maillog
+tail -f /var/log/exim_mainlog
+any issu in intall please mail- ssuman651@gmail.com
